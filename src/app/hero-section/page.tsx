@@ -71,47 +71,50 @@ const  HeroSection =()=> {
         return () => clearInterval(interval);
       }, []);
 
-    return (
-        <div className="min-h-max bg-black flex justify-center ">
-          <Card className="bg-transparent border-none shadow-none ">
-            <div className="flex items-center justify-center space-x-1 md:space-x-2">
+      return (
+        <div className="h-max bg-black flex items-center mt-20 mb-20">
+          <Card className="bg-transparent border-none shadow-none w-full">
+            {/* Name Container */}
+            <div className="flex items-center justify-center flex-wrap">
               {name.split('').map((char, index) => (
                 <span
                   key={index}
                   className={`
-                    text-2xl md:text-8xl
+                    text-xl sm:text-4xl md:text-6xl lg:text-8xl
                     transition-all duration-100 ease-in-out
                     text-emerald-400 
                     ${letterFonts[index]}
-                    ${char === ' ' ? 'w-4 md:w-6' : ''}
+                    ${char === ' ' ? 'w-2 sm:w-3 md:w-4 lg:w-6' : ''}
                   `}
                 >
                   {char}
                 </span>
-                
               ))}
-              
             </div>
+      
+            {/* Title and Skills Section */}
             <div className="flex flex-col items-center">
+            <p className="text-sm sm:text-base md:text-lg text-gray-400 mt-4">
+                  Passionate about building innovative software solutions and leveraging 
+                  cutting-edge technologies to drive digital transformation.
+                </p>
+              {/* Title */}
+              <div className="w-full flex justify-center mt-4 sm:mt-6">
+                <div className="text-black font-bold px-4 sm:px-6 py-2 rounded-lg 
+                              text-sm sm:text-base md:text-lg lg:text-xl 
+                              bg-emerald-400">
+                  <p>Full-stack Developer/AI Engineer</p>
+                </div>
+              </div>
+      
+              {/* Skills and Description */}
+              <div className="text-center mt-4">
+                <Badge variant="secondary" className="font-bold text-sm sm:text-base md:text-lg">
+                  {skills[currentSkillIndex]}
+                </Badge>
                 
-                <div className="flex justify-center items-center w-full">
-                  <div className="text-black font-bold px-8 rounded-lg mt-10 tex-sm md:text-xl flex flex-start bg-emerald-400">
-                    <p>Full-stack Developer/AI Engineer </p>
-                  </div>
-                  {/* <div>
-                    <Badge variant="secondary" className="font-bold text-lg mt-10 ml-10">{skills[currentSkillIndex]}</Badge>
-                  </div> */}
-                </div>
-
-                <div className="text-center text-gray-100 font-medium mt-4 text-md ">
-                    <Badge variant="secondary" className="font-bold text-lg mt-10 ">{skills[currentSkillIndex]}</Badge>
-                  <p className="mt-6 text-sm text-gray-400 md:text-lg glow">
-                  Passionate about building innovative software solutions and leveraging cutting-edge technologies to drive digital transformation.
-                  </p>
-
-                </div>
-              
-
+               
+              </div>
             </div>
           </Card>
         </div>

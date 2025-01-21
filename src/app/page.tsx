@@ -7,9 +7,9 @@ import Footer from "./footer/page";
 export default function Home() {
   return (
     <>
-      <div className="container mx-auto w-full h-screen flex flex-col ">
+      <div className="flex flex-col">
        
-        <div className="mb-20">
+        <div >
         <HeroSection />
         </div>
         <div>

@@ -4,8 +4,6 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
-
-// Sample project data
 const projects = [
   {
     title: "InterViewAdvanced",
@@ -36,7 +34,7 @@ const projects = [
     description: "Test-Case-Generator is a tool that generates test cases for a given screen-shots of flow of application and small description.",
     techStack: ["Next.js", "Tailwind CSS", "shadcn/ui"],
     type: "Personal",
-    liveUrl: "est-case-generator-vqyz.vercel.ap",
+    liveUrl: "https://test-case-generator-vqyz.vercel.app/",
     githubUrl: "https://github.com/HemanthGirimath/test-case-generator"
   },
   {
@@ -54,7 +52,7 @@ const projects = [
 const ProjectCard = ({ project }) => {
   return (
     <div className="group transition-all duration-300 ease-in-out">
-      <Card className="h-full bg-black/40 hover:bg-black/60 border border-emerald-500/20 
+      <Card className="h-full  bg-black/40 hover:bg-black/60 border border-emerald-500/20 
                      hover:border-emerald-500/40 transition-all duration-300 p-6">
         <div className="flex justify-between items-start mb-4">
           <h3 className="text-xl font-bold text-emerald-400 group-hover:text-emerald-300 
@@ -99,12 +97,12 @@ const ProjectCard = ({ project }) => {
 
 const ProjectsSection = () => {
   return (
-    <div className="min-h-max bg-gradient-to-br from-black via-zinc-950/90 to-black p-8">
+    <div className="min-h-max  bg-gradient-to-br from-black via-zinc-950/90 to-black">
       <h2 className="text-4xl font-bold text-emerald-400 mb-12 text-center">
         Projects
       </h2>
 
-      <Tabs defaultValue="all" className="max-w-7xl mx-auto mb-8">
+      <Tabs defaultValue="all" className="max-w-7xl mx-auto mb-8 ">
         <div className="flex justify-center mb-8">
           <TabsList className="bg-black/40 border border-emerald-500/20">
             <TabsTrigger value="all" className="data-[state=active]:bg-emerald-950">
