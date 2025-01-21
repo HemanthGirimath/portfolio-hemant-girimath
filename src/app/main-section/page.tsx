@@ -26,7 +26,7 @@ const projects = [
     description: "Text-To-SQL is a app that allows user to talk the database using Natural language",
     techStack: ["Next.js", "Tailwind CSS","Supabase","Groq LLM","Shadcn/ui"],
     type: "Personal",
-    liveUrl: "https://example.com",
+    liveUrl: "https://text-to-sql-lanchain.vercel.app/chat",
     githubUrl: "https://github.com/HemanthGirimath/text_to_sql_lanchain"
   },
   {

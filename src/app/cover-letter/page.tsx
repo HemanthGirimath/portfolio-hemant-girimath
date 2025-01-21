@@ -19,11 +19,11 @@ const CoverLetterPage = () => {
             </div>
             <div className="flex items-center gap-2 text-zinc-400">
               <MapPin className="w-5 h-5" />
-              <span>Your Location</span>
+              <span>Banglore, Karnataka</span>
             </div>
             <div className="flex items-center gap-2 text-zinc-400">
               <Building className="w-5 h-5" />
-              <span>Full-stack Developer Position</span>
+              <span>Full-stack Developer Position/AI-ML Engineer</span>
             </div>
           </div>
         </div>
